@@ -32,6 +32,8 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile group: 'com.netflix.hystrix', name: 'hystrix-core', version: '1.4.12'
+    compile group: 'com.netflix.hystrix', name: 'hystrix-metrics-event-stream', version: '1.4.12'
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
